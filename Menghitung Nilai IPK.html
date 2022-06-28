@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MENGHITUNG IPK</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <div class="container">
+    <h2 align="center">Menghitung IP Semester 1</h2><hr>
+    <p align="center">Nama    :   Claudia Anissa <br>NIM  : 20210121021 <br>Prodi  : Sistem Informasi 1/2</p>
+    </div>
+    <hr><div class="row">
+    <div class="col-sm-4">    
+    <h5 align="left">Mata Kuliah</h5><hr>
+    <p align="left">Algoritma dan Pemrograman<br>General English<br>Sistem dan teknologi informasi<br>Pancasila dan Kewarganegaraan<br>Matematika Bisnis<br>Manajemen dan organisasi<br>Pembangunan karakter & Etika Profesi</p>
+    </div>
+        <div class="col">
+        <h5>UTS</h5><hr>
+          <script>
+            var UTS = [70,85,85,88,85,90,95];
+            for( i=0; i<UTS.length; i++ ){
+              document.writeln (UTS[i] + "<br>" );
+              }
+          </script>
+          </div>
+        <div class="col">
+        <h5>UAS</h5><hr>
+          <script>
+            var UAS = [85,100,85,90,90,85,90];
+            for( i=0; i<UAS.length; i++ ){
+              document.writeln (UAS[i] + "<br>" );
+              }
+          </script>
+        </div>
+        <div class="col">
+        <h5>Tugas</h5><hr>
+          <script>
+            var Tugas = [85,95,85,90,90,88,95];
+            for( i=0; i<Tugas.length; i++ ){
+              document.writeln (Tugas[i] + "<br>" );
+              }
+          </script>
+          </div>
+        <div class="col">
+        <h5>Kehadiran</h5><hr>
+          <script>
+            var Kehadiran = [100,100,100,100,100,100,100];
+            for( i=0; i<Kehadiran.length; i++ ){
+              document.writeln (Kehadiran[i] + "<br>" );
+              }
+          </script>
+          </div>
+          <div class="col">
+            <h5>Nilai Akhir</h5><hr>
+              <script>
+                var nilai = UTS[0]*0.3 + UAS[0]*0.4 + Kehadiran[0]*0.1 + Tugas[0]*0.2;
+                  document.writeln (nilai + "<br>" );
+                  var inggris = UTS[1]*0.3 + UAS[1]*0.4 + Kehadiran[1]*0.1 + Tugas[1]*0.2;
+                  document.writeln (inggris + "<br>" );
+                  var sti = UTS[2]*0.3 + UAS[2]*0.4 + Kehadiran[2]*0.1 + Tugas[2]*0.2;
+                  document.writeln (sti + "<br>" );
+                  var pkn = UTS[3]*0.3 + UAS[0]*0.4 + Kehadiran[3]*0.1 + Tugas[3]*0.2;
+                  document.writeln (pkn + "<br>" );
+                  var matbis = UTS[4]*0.3 + UAS[4]*0.4 + Kehadiran[4]*0.1 + Tugas[4]*0.2;
+                  document.writeln (matbis + "<br>" );
+                  var mnj = UTS[5]*0.3 + UAS[5]*0.4 + Kehadiran[5]*0.1 + Tugas[5]*0.2;
+                  document.writeln (mnj + "<br>" );
+                  var pengdiri = UTS[6]*0.3 + UAS[6]*0.4 + Kehadiran[6]*0.1 + Tugas[6]*0.2;
+                  document.writeln (pengdiri + "<br>" );
+              </script>
+              </div><hr>
+        <div class="row">
+        <div class="col-sm-4">
+            <script>
+            var IPK = (nilai+inggris+sti+pkn+matbis+mnj+pengdiri)/175;
+            document.write("IPK = " + IPK + "<br>");
+            document.write("Grade = ");
+              if(IPK <= 4.00){
+                document.write("A");
+              }else if(IPK <= 3.50 && IPK >= 2.95){
+                document.write("B");
+              }else if(IPK < 2.95 && IPK >= 2.30){
+                document.write("C");
+              }else{
+                document.write("D");
+              }
+              </script>
+          </div>
+  </body>
+</html>
